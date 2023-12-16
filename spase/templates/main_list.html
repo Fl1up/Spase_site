@@ -1,40 +1,13 @@
-
-
 {% extends 'base.html' %}
 {% load random %}
 {% block content %}
     {% load mediapath %}
-    <div class="wrap text-center" style="margin-left: 70vw;margin-top: 10vh;color: white">
 
-    <div class="box">
-        <p style="font-size: 1vh">МЫ</p>
-        <p style="font-size: 6vh"> 1</p>
-        <p style="font-size: 1vh">НА РЫНКЕ</p>
-    </div>
-    <div class="box">
-        <p style="font-size: 1vh">ГАРАНТИРУЕМ</p>
-        <p style="font-size: 5vh"> 50%</p>
-        <p style="font-size: 1vh">БЕЗОПАСНОСТИ</p>
-    </div>
-    <div class="box">
-        <p style="font-size: 1vh">КАЛЕНДАРИК</p>
-        <p style="font-size: 5vh"> 2001г</p>
-        <p style="font-size: 1vh">В ПОДАРОК</p>
-    </div>
-    <div class="box">
-        <p style="font-size: 1vh">ПУТИШЕСТВИЕ</p>
-        <p style="font-size: 5vh"> 574</p>
-        <p style="font-size: 1vh">ДНЯ</p>
-    </div>
-      <div class="col-md-2">
-        <button type="button" style="margin-left: -210vh;width: 20vh" class="btn btn-outline-info">Начать путешествие</button>
-    </div>
-
-    <div class="mains">
-        <p style="letter-spacing: 0.5vw;">ПУТЕШЕСТВИЕ</p>
-        <p style="margin-top: 5vh;font-size: 2vh; margin-left: -2.5vw;letter-spacing: 6px;">на красную планету</p>
-        <img src="/media/head/img_2.png" style="margin-left: -37vw;width: 40vw;height: 50vh; margin-top: -50vh">
-        <img src="/media/head/img_3.png" style="margin-left: -25vw; width: 3vw;height: 10vh; margin-top: -5vh;">
+    <div class="containers">
+        {% include "front/head.html" %}
+        {% include "front/blog.html" %}
+        {% include "front/price.html" %}
     </div>
 
 {% endblock %}
+
